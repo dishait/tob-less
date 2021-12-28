@@ -10,6 +10,7 @@ const active = computed(() => {
 })
 
 const router = useRouter()
+const toLink = url => window.location.href = url
 </script>
 
 <template>
@@ -23,7 +24,7 @@ const router = useRouter()
 
             <div
                 class="cursor-pointer font-semibold mx-6 text-lg active"
-                @click="router.go('/guide/')"
+                @click="toLink('https://github.com/markthree/tob-less')"
             >Github</div>
 
             <div
