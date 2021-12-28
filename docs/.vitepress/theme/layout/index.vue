@@ -1,0 +1,46 @@
+<script setup>
+import { computed } from "vue";
+import { useRoute, useRouter } from 'vitepress'
+import DefaultTheme from 'vitepress/theme'
+const { Layout } = DefaultTheme
+const route = useRoute()
+const active = computed(() => {
+    const isGuide = route.path.includes('/guide')
+    return isGuide ? 'text-primary' : null
+})
+
+const router = useRouter()
+</script>
+
+<template>
+    <Layout>
+        <template #navbar-search>
+            <div
+                :class="[active]"
+                class="cursor-pointer font-semibold text-lg active"
+                @click="router.go('/guide/')"
+            >Guide</div>
+
+            <div
+                class="cursor-pointer font-semibold mx-6 text-lg active"
+                @click="router.go('/guide/')"
+            >Github</div>
+
+            <div
+                class="cursor-pointer font-semibold text-lg active"
+                @click="router.go('/guide/')"
+            >Gitee</div>
+        </template>
+    </Layout>
+</template>
+
+<style scoped lang="less">
+@import (reference, less) "../custom.less";
+.active {
+    transition: all 0.2s ease-in-out;
+}
+
+.active:hover {
+    .text-primary;
+}
+</style>
