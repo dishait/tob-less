@@ -6,6 +6,12 @@
   "author": "markthree",
   "license": "MIT",
   "private": false,
+  "keywords": [
+    "uniapp",
+    "theme",
+    "less",
+    "css"
+  ],
   "files": [
     "src",
     "LICENSE",

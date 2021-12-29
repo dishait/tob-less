@@ -1,5 +1,6 @@
 <script setup>
 import { computed } from "vue";
+import { useHead } from '@vueuse/head'
 import { useRoute, useRouter } from 'vitepress'
 import DefaultTheme from 'vitepress/theme'
 const { Layout } = DefaultTheme
@@ -11,6 +12,14 @@ const active = computed(() => {
 
 const router = useRouter()
 const toLink = url => window.location.href = url
+
+useHead({
+    link: [{
+        ref: 'icon',
+        type: 'image/png',
+        href: '/favicon.png'
+    }]
+})
 </script>
 
 <template>
@@ -23,7 +32,7 @@ const toLink = url => window.location.href = url
             >Guide</div>
 
             <div
-                class="cursor-pointer font-semibold mx-6 text-lg active"
+                class="cursor-pointer font-semibold mx-4 text-lg active"
                 @click="toLink('https://github.com/markthree/tob-less')"
             >Github</div>
 
