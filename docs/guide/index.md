@@ -208,6 +208,16 @@
 
 ## 使用 :beer:
 
+### 安装 tob-less 插件
+
+首先前往 👉 [插件市场 tob-less](https://ext.dcloud.net.cn/plugin?id=7079) 使用 HBuliderx 导入插件
+
+![tob-less](./plugin.png)
+
+
+<br />
+<br />
+
 ### 安装 less 插件 
 
 由于样式库是用的 less，需要通过 <t-tag>less插件</t-tag> 来编译成 css。
@@ -1481,3 +1491,4 @@ export function createApp() {
 - [Css 变量](https://developer.mozilla.org/zh-CN/docs/Web/CSS/Using_CSS_custom_properties)
 - [Windicss](https://cn.windicss.org/)
 - [Tailwindcss](https://www.tailwindcss.cn/)
+

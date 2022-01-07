@@ -25,7 +25,7 @@ onMounted(() => {
 })
 </script>
 
-# 🧐 原子的
+# :monocle_face: 原子的
 
 <br />
 
@@ -35,7 +35,7 @@ onMounted(() => {
 <br />
 <br />
 
-# 🤔 主题驱动
+# :thinking: 主题驱动
 
 <br />
 
@@ -46,7 +46,7 @@ onMounted(() => {
 <br />
 <br />
 
-# 😋 支持 Mixins
+# :yum: 支持 Mixins
 
 <br />
 
