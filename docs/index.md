@@ -12,7 +12,7 @@ features:
     details: 语义化的模板，更清晰的结构
 ---
 
-<br />
+<!-- <br /> -->
 
 
 <script setup>
@@ -24,7 +24,7 @@ onMounted(() => {
   init(oneElement, { showCursor: false,  disableBackTyping: true, strings: [' uniapp 样式库'] });
 })
 </script>
-
+<!-- 
 # :monocle_face: 原子的
 
 <br />
@@ -50,9 +50,9 @@ onMounted(() => {
 
 <br />
 
-<t-mixins />
+<t-mixins /> -->
 
 
-<div class="mt-20 text-center text-sm">
+<div class="mt-10 text-center text-sm">
  本文档基于<t-tag size="md" :light="false" color="accent" rounded="base" class="mx-1">VitePress + tob less</t-tag>构建
 </div>

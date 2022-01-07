@@ -24,6 +24,8 @@ const el = ref()
 const editorRef = ref()
 
 onMounted(() => {
+
+
   const addonOptions = {
     autoCloseBrackets: true,
     autoCloseTags: true,
