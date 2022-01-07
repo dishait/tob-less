@@ -23,6 +23,8 @@
     "docs:serve": "vitepress serve docs"
   },
   "devDependencies": {
+    "@vueuse/core": "^7.5.1",
+    "codemirror": "^5.62.3",
     "ityped": "^1.0.3",
     "less": "^4.1.2",
     "vitepress": "^0.20.9"
