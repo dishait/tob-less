@@ -7,11 +7,14 @@ const shared = Vue.observable({ appTheme })
 
 // #ifdef VUE3
 import { reactive } from 'vue'
-const shared = reactive({ appTheme })
 // #endif
 
 export default (V, options = {}) => {
 	const { initAppTheme = '' } = options
+
+	// #ifdef VUE3
+	const shared = reactive({ appTheme })
+	// #endif
 
 	shared.appTheme = shared.appTheme
 		? shared.appTheme
